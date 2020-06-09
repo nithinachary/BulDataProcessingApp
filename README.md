@@ -10,28 +10,25 @@ APIs details with path, sample request and response
 1. Upload File 
 
       Sample Request          : {URL : http://localhost:3000/bulk/uploadFile, Method : POST, Body : FileName }                          
-      Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded The File","data":""}                       
-      Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                      
+      Sample success response : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded The File","data":""}                             Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                      
       Validation error        : {}
       
 2. Upload Multiple File 
 
-      Sample Request          : {URL : http://localhost:3000/bulk/uploadMultipleFile, Method : POST, Body : [FileName1,FileName2] }
-      Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded All The Files","data":""}
-      Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}
+      Sample Request          : {URL : http://localhost:3000/bulk/uploadMultipleFile, Method : POST, Body : [FileName1,FileName2] }     
+      Sample success response : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded All The Files","data":""}                         Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                       
       Validation error        : {}
       
 3. Download file
   
-      Sample Request          : {URL : http://localhost:3000/bulk/getFile?file="", Method : GET, Params : FileName }
-      Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Downloaded The File","data":""}
-      Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}
+      Sample Request          : {URL : http://localhost:3000/bulk/getFile?file="", Method : GET, Params : FileName }                           Sample success response : {"code":200,"status":"SUCCESS","msg":"Successfullly Downloaded The File","data":""}                     
+      Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                       
       Validation error        : {}
  
  4. List All files
   
-      Sample Request          : {URL : http://localhost:3000/bulk/listAllFiles, Method : GET }
-      Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Fetched All The File","data":""}
+      Sample Request          : {URL : http://localhost:3000/bulk/listAllFiles, Method : GET }                                           
+      Sample success response : {"code":200,"status":"SUCCESS","msg":"Successfullly Fetched All The File","data":""}
       Sample error response   : {"code":404,"status":"FAILED","msg":"No files found","data":""}
       Validation error        : {}
       
