@@ -10,7 +10,8 @@ APIs details with path, sample request and response
 1. Upload File 
 
       Sample Request          : {URL : http://localhost:3000/bulk/uploadFile, Method : POST, Body : FileName }                           
-      Sample response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded The File","data":""}                             Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                       
+      Sample response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded The File","data":""}                       
+      Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                       
       Validation error        : {}
       
 2. Upload Multiple File 
@@ -36,20 +37,20 @@ APIs details with path, sample request and response
       
  5. Get File Detials
  
-      Sample Request          : {URL : http://localhost:3000/bulk/listAllFiles, Method : GET }
-      Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Fetched The Given File Details","data":""}
-      Sample error response   : {"code":404,"status":"FAILED","msg":"No file found","data":""}
+      Sample Request          : {URL : http://localhost:3000/bulk/getFileDetails?file=sample, Method : GET, Params : FileName}           
+      Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Fetched The Given File Details","data":""}           
+      Sample error response   : {"code":404,"status":"FAILED","msg":"No file found","data":""}                                           
       Validation error        : {}
       
  6. User Login
-  
-      Sample Request          : {URL : http://localhost:3000/users/login, Method : GET, 
-                                                            Body: {"email":"nitin@gmail.com","password":"password"}}
-      Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Logged In","data":""}
-      Sample error response   : {"code":404,"status":"FAILED","msg":"No Such User Found. The email address is not   
-                                          associated with any account. Double-check your email address and try again.","data":""}
-      Sample error response   : {"code":401,"status":"FAILED","msg":"Invalid Email Or Password","data":""}
-      Sample error response   : {"code":401,"status":"FAILED","msg":"Your account has not been verified","data":""}
+     
+      Sample Request          : {URL : http://localhost:3000/users/login, Method : GET,                                                 
+                                                            Body: {"email":"nitin@gmail.com","password":"password"}}                     
+      Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Logged In","data":""}                               
+      Sample error response   : {"code":404,"status":"FAILED","msg":"No Such User Found. The email address is not                       
+                                       associated with any account. Double-check your email address and try again.","data":""}           
+      Sample error response   : {"code":401,"status":"FAILED","msg":"Invalid Email Or Password","data":""}                               
+      Sample error response   : {"code":401,"status":"FAILED","msg":"Your account has not been verified","data":""}                     
       Validation error        : {}
       
  7. User Registration
