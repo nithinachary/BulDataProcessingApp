@@ -48,17 +48,18 @@ APIs details with path, sample request and response
                                                             Body: {"email":"nitin@gmail.com","password":"password"}}                     
       Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Logged In","data":""}                               
       Sample error response   : {"code":404,"status":"FAILED","msg":"No Such User Found. The email address is not
-                                                 associated with any account. Double-check your email address and try again.","data":""}       Sample error response   : {"code":401,"status":"FAILED","msg":"Invalid Email Or Password","data":""}                               
+                                                 associated with any account. Double-check your email address and try again.","data":""} 
+      Sample error response   : {"code":401,"status":"FAILED","msg":"Invalid Email Or Password","data":""}                               
       Sample error response   : {"code":401,"status":"FAILED","msg":"Your account has not been verified","data":""}                     
       Validation error        : {}
       
  7. User Registration
   
       Sample Request          : {URL : http://localhost:3000/users/registerUser, Method : POST,
-                                                                               Body: {"email":"nitin@gmail.com","password":"password"}} 
+                                                                               Body: {"email":"nitin@gmail.com","password":"password"}}
       Sample Success Response : {"code":200,"status":"SUCCESS","msg":"A verification email has been sent to email","data":""}           
       Sample error response   : {"code":401,"status":"FAILED","msg":"The email address you have entered is already registered"
-                                                                                          ,"data":"Registratoion Id" }                   
+                                                                                         ,"data":"Registratoion Id" }                   
       Validation error        : {}
       
  8. User Verification
