@@ -15,8 +15,7 @@ APIs details with path, sample request and response
       
 2. Upload Multiple File 
 
-      Sample Request          : {URL : http://localhost:3000/bulk/uploadMultipleFile, Method : POST, Body : [FileName1,FileName2] }     
-      Sample success response : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded All The Files","data":""}                         Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                       
+      Sample Request          : {URL : http://localhost:3000/bulk/uploadMultipleFile, Method : POST, Body : [FileName1,FileName2] }           Sample response : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded All The Files","data":""}                                 Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                      
       Validation error        : {}
       
 3. Download file
