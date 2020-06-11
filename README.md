@@ -51,7 +51,8 @@ APIs details with path, sample request and response
                                                  associated with any account. Double-check your email address and try again.","data":""} 
       Sample error response   : {"code":401,"status":"FAILED","msg":"Invalid Email Or Password","data":""}                               
       Sample error response   : {"code":401,"status":"FAILED","msg":"Your account has not been verified","data":""}                     
-      Validation error        : {}
+      Validation error        : {{"success":false,"message":"Validation failed",                                                        
+              "data":{"errors":{"email":["The email format is  invalid."],"password":["The password must be at least 6 characters."]}}}}
       
  7. User Registration
   
@@ -60,7 +61,8 @@ APIs details with path, sample request and response
       Sample Success Response : {"code":200,"status":"SUCCESS","msg":"A verification email has been sent to email","data":""}           
       Sample error response   : {"code":401,"status":"FAILED","msg":"The email address you have entered is already registered"
                                                                                          ,"data":"Registratoion Id" }                   
-      Validation error        : {{"success":false,"message":"Validation failed","data":{"errors":{"email":["The email format is  invalid."],"password":["The password must be at least 6 characters.","The password confirmation does not match."]}}}}
+      Validation error        : {{"success":false,"message":"Validation failed",                                                        
+              "data":{"errors":{"email":["The email format is  invalid."],"password":["The password must be at least 6 characters."]}}}}
       
  8. User Verification
   
@@ -69,7 +71,8 @@ APIs details with path, sample request and response
       Sample Success Response : {"code":200,"status":"SUCCESS","msg":"A verification email has been sent to email","data":""}           
       Sample error response   : {"code":401,"status":"FAILED","msg":"This user has already been verified","data":""}                     
       Sample error response   : {"code":401,"status":"FAILED","msg":"Token expired. Please check with Admin","data":""}                 
-      Validation error        : {}
+      Validation error        : {{"success":false,"message":"Validation failed",                                                        
+                                "data":{"errors":{"email":["The email format is invalid."],"token":["The token must be an integer."]}}}}
       
  9. User Cart Details
   
@@ -79,7 +82,7 @@ APIs details with path, sample request and response
       Sample error response   : {"code":404,"status":"FAILED","msg":"No Such File Found","data":""}                                     
       Sample error response   : {"code":401,"status":"FAILED","msg":"Quantiy should be greater than 0","data":""}                       
       Sample error response   : {"code":401,"status":"FAILED","msg":"Item already added to cart","data":""}                             
-      Validation error        : {}
+      Validation error        : {{"success":false,"message":"Validation failed","data":{"errors":{"userId":["The userId must be an integer."],"fileName":["The fileName field is required."],"quantity":["The quantity must be an integer."]}}}}
       
  10. Final Paying Amount/ Final Purchase
   
@@ -87,7 +90,7 @@ APIs details with path, sample request and response
       Sample Success Response : {"code":200,"status":"SUCCESS","msg":"Item added to the cart","data":"Final Payable Amount = "}         
       Sample error response   : {"code":404,"status":"FAILED","msg":"No User Found","data":""}                                           
       Sample error response   : {"code":404,"status":"FAILED","msg":"No Valid Cart for the given User","data":""}                       
-      Validation error        : {}
+      Validation error        : {{"success":false,"message":"Validation failed","data":{"errors":{"userId":["The userId must be an integer."],"fileName":["The fileName field is required."],"quantity":["The quantity must be an integer."]}}}}
  
  
     
