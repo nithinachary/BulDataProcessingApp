@@ -60,7 +60,7 @@ APIs details with path, sample request and response
       Sample Success Response : {"code":200,"status":"SUCCESS","msg":"A verification email has been sent to email","data":""}           
       Sample error response   : {"code":401,"status":"FAILED","msg":"The email address you have entered is already registered"
                                                                                          ,"data":"Registratoion Id" }                   
-      Validation error        : {}
+      Validation error        : {{"success":false,"message":"Validation failed","data":{"errors":{"email":["The email format is  invalid."],"password":["The password must be at least 6 characters.","The password confirmation does not match."]}}}}
       
  8. User Verification
   
