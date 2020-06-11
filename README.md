@@ -48,7 +48,7 @@ APIs details with path, sample request and response
                                                             Body: {"email":"nitin@gmail.com","password":"password"}}                     
       Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Logged In","data":""}                               
       Sample error response   : {"code":404,"status":"FAILED","msg":"No Such User Found. The email address is not
-                                                 associated with any account. Double-check your email address and try again.","data":""}
+                                               associated with any account. Double-check your email address and try again.","data":""}
       Sample error response   : {"code":401,"status":"FAILED","msg":"Invalid Email Or Password","data":""}                               
       Sample error response   : {"code":401,"status":"FAILED","msg":"Your account has not been verified","data":""}                     
       Validation error        : {{"success":false,"message":"Validation failed",                                                        
