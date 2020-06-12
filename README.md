@@ -57,7 +57,7 @@ APIs details with path, sample request and response
  7. User Registration
   
       Sample Request          : {URL : http://localhost:3000/users/registerUser, Method : POST,
-                                                                               Body: {"email":"nitin@gmail.com","password":"password"}}
+                                                                    Body: {"email":"nitin@gmail.com","password":"password"}}
       Sample Success Response : {"code":200,"status":"SUCCESS","msg":"A verification email has been sent to email","data":""}           
       Sample error response   : {"code":401,"status":"FAILED","msg":"The email address you have entered is already registered"           
                                                                                          ,"data":"Registratoion Id" }                   
