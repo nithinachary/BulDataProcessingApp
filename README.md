@@ -12,35 +12,36 @@ APIs details with path, sample request and response
       Sample Request          : {URL : http://localhost:3000/bulk/uploadFile, Method : POST, Body : FileName }                           
       Sample response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded The File","data":""}                       
       Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                       
-      Validation error        : {}
+      Validation error        : {{"success":false,"message":"Validation failed","data":{"errors":{"Only JSON & EXCEL files              
+                                                                                                                      are allowed!}}}}
       
 2. Upload Multiple File 
 
       Sample Request          : {URL : http://localhost:3000/bulk/uploadMultipleFile, Method : POST, Body : [FileName1,FileName2] }
       Sample response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Uploaded All The Files","data":""}                   
       Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                       
-      Validation error        : {}
+      Validation error        : {{"success":false,"message":"Validation failed","data":{"errors":{"Only JSON & EXCEL files              
+                                                                                                                      are allowed!}}}}}
       
 3. Download file
   
       Sample Request          : {URL : http://localhost:3000/bulk/getFile?file="", Method : GET, Params : FileName }                     
       Sample response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Downloaded The File","data":""}                     
       Sample error response   : {"code":404,"status":"FAILED","msg":"The specified file does not exist","data":""}                       
-      Validation error        : {}
  
  4. List All files
   
       Sample Request          : {URL : http://localhost:3000/bulk/listAllFiles, Method : GET }                                           
       Sample response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Fetched All The File","data":""}                     
-      Sample error response   : {"code":404,"status":"FAILED","msg":"No files found","data":""}                                         
-      Validation error        : {}
+      Sample error response   : {"code":404,"status":"FAILED","msg":"No files found","data":""}
       
  5. Get File Detials
  
       Sample Request          : {URL : http://localhost:3000/bulk/getFileDetails?file=sample, Method : GET, Params : FileName}           
       Sample Response         : {"code":200,"status":"SUCCESS","msg":"Successfullly Fetched The Given File Details","data":""}           
       Sample error response   : {"code":404,"status":"FAILED","msg":"No file found","data":""}                                           
-      Validation error        : {}
+      Validation error        : {{"success":false,"message":"Validation failed","data":{"errors":{"Only JSON & EXCEL files              
+                                                                                                                      are allowed!}}}}
       
  6. User Login
      
